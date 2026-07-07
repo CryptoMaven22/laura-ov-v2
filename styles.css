@@ -1,0 +1,179 @@
+:root {
+  --ink: #101218;
+  --muted: #667085;
+  --line: #e9e5f1;
+  --card: #ffffff;
+  --purple: #8f54f6;
+  --purple-dark: #6e3dd9;
+  --violet: #ede4ff;
+  --bg: #fbf9ff;
+  --shadow: 0 18px 54px rgba(28, 25, 48, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #ffffff 0%, var(--bg) 100%);
+  line-height: 1.45;
+}
+
+.page {
+  width: min(calc(100% - 40px), 1180px);
+  margin: 0 auto;
+  padding: 56px 0 32px;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  background: var(--violet);
+  color: var(--purple-dark);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
+
+h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  line-height: 0.96;
+  letter-spacing: -0.055em;
+  margin: 0 0 18px;
+}
+
+h2 {
+  font-size: clamp(26px, 4vw, 42px);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0 0 12px;
+}
+
+h3 {
+  margin: 0 0 8px;
+}
+
+.lead,
+.subtext {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 20px;
+  margin: 0;
+}
+
+.subtext {
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.viewer-card,
+.proof-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.viewer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+  color: #ffffff;
+  font-weight: 800;
+  padding: 12px 16px;
+  cursor: pointer;
+  box-shadow: 0 14px 24px rgba(143, 84, 246, 0.24);
+  white-space: nowrap;
+}
+
+.workflow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.step,
+.proof-grid article {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 18px;
+  background: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.step span {
+  display: inline-flex;
+  background: var(--violet);
+  color: var(--purple-dark);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.step p,
+.proof-card p,
+.proof-grid p {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.step.active {
+  transform: translateY(-4px);
+  border-color: rgba(143, 84, 246, 0.5);
+  box-shadow: 0 18px 42px rgba(143, 84, 246, 0.18);
+}
+
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  padding: 24px;
+  background: #ffffff;
+  font-weight: 700;
+}
+
+@media (max-width: 900px) {
+  .viewer-header {
+    display: block;
+  }
+
+  button {
+    margin-top: 16px;
+  }
+
+  .workflow,
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+}
