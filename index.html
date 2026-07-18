@@ -845,11 +845,11 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:36px}
 .graceSideNavLabel{display:block;margin:0 10px 8px;color:#91a0bb;font-size:10px;font-weight:950;letter-spacing:.16em;text-transform:uppercase}
 .graceSideNavLink{display:flex;align-items:center;gap:11px;min-height:42px;padding:10px 11px;border-radius:12px;color:#64728d;font-size:14px;font-weight:750;line-height:1.2;transition:background .16s ease,color .16s ease,transform .16s ease}
 .graceSideNavLink:hover{background:#f4efff;color:var(--purple2);transform:translateX(2px)}
-.graceSideNavLink.active{background:#e7f4f2;color:#155e59;font-weight:900}
+.graceSideNavLink.active{background:#f0e7ff;color:#6e3dd9;font-weight:900}
 .graceSideNavIcon{width:18px;height:18px;flex:0 0 18px;stroke:#8ca0bd;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.graceSideNavLink.active .graceSideNavIcon{stroke:#0f766e}
+.graceSideNavLink.active .graceSideNavIcon{stroke:#7c3aed}
 .graceSideNavBadge{margin-left:auto;min-width:22px;padding:3px 7px;border-radius:999px;background:#eef1f4;color:#6c778c;font-size:10px;font-weight:900;text-align:center}
-.graceSideNavLink.active .graceSideNavBadge{background:#d7ebe8;color:#155e59}
+.graceSideNavLink.active .graceSideNavBadge{background:#e5d7ff;color:#6e3dd9}
 .graceSideNavFuture{opacity:.72;cursor:default}
 .graceSideNavFuture:hover{background:transparent;color:#64728d;transform:none}
 .graceSideNavFuture .graceSideNavIcon{stroke:#9ca8bc}
@@ -871,24 +871,26 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:36px}
 <body>
 <aside aria-label="Grace page navigation" class="graceSideNav">
 <div class="graceSideNavSection">
-<span class="graceSideNavLabel">Grace Pages</span>
-<a class="graceSideNavLink active" href="index.html">
+<span class="graceSideNavLabel">Work View</span>
+<a class="graceSideNavLink active" data-nav-target="primary-actions" href="#primary-actions">
 <svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><path d="M3 12h7V3H3zM14 21h7v-9h-7zM14 3h7v5h-7zM3 16h7v5H3z"></path></svg>
-<span>Operating Environment</span><span class="graceSideNavBadge">1</span>
+<span>Agent Dashboard</span><span class="graceSideNavBadge">1</span>
 </a>
-<a class="graceSideNavLink" href="overview.html">
-<svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5M8 17h3"></path></svg>
-<span>Product Thesis / Overview</span><span class="graceSideNavBadge">2</span>
-</a>
-<a class="graceSideNavLink" href="intelligent-operating-environment.html">
-<svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="19" cy="12" r="2"></circle><path d="M7 11l3.5-4.5M13.5 6.5L17 11M7 13l3.5 4.5M13.5 17.5L17 13"></path></svg>
-<span>Intelligent Operating Environment</span><span class="graceSideNavBadge">3</span>
+<a class="graceSideNavLink" data-nav-target="queue" href="#queue">
+<svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"></path></svg>
+<span>Buyers / Sellers</span><span class="graceSideNavBadge">2</span>
 </a>
 </div>
 <div class="graceSideNavSection">
-<span class="graceSideNavLabel">Operating View</span>
-<a class="graceSideNavLink" data-nav-target="primary-actions" href="#primary-actions"><span>Agent Dashboard</span></a>
-<a class="graceSideNavLink" data-nav-target="queue" href="#queue"><span>Buyer / Seller Window</span></a>
+<span class="graceSideNavLabel">Product View</span>
+<a class="graceSideNavLink" href="overview.html">
+<svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"></path><path d="M8 9h8M8 13h5M8 17h3"></path></svg>
+<span>Overview</span><span class="graceSideNavBadge">3</span>
+</a>
+<a class="graceSideNavLink" href="intelligent-operating-environment.html">
+<svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><circle cx="5" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="19" cy="12" r="2"></circle><path d="M7 11l3.5-4.5M13.5 6.5L17 11M7 13l3.5 4.5M13.5 17.5L17 13"></path></svg>
+<span>Intelligent Operating Environment</span><span class="graceSideNavBadge">4</span>
+</a>
 </div>
 </aside>
 <header class="testimonialsTop" id="top">
