@@ -865,18 +865,18 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:36px}
   .wrap{width:min(calc(100% - 24px),var(--max));margin-left:0;margin-right:auto}
 }
 @media(max-width:760px){.graceSideNav{display:none}}
-#viewer,#primary-actions,#queue,#operator-model{scroll-margin-top:105px}
+#viewer,#agent-dashboard-start,#primary-actions,#buyers-sellers-start,#operator-model{scroll-margin-top:105px}
 </style>
 </head>
 <body>
 <aside aria-label="Grace page navigation" class="graceSideNav">
 <div class="graceSideNavSection">
 <span class="graceSideNavLabel">Work View</span>
-<a class="graceSideNavLink active" data-nav-target="viewer" href="#viewer">
+<a class="graceSideNavLink active" data-nav-target="agent-dashboard-start" href="#agent-dashboard-start">
 <svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><path d="M3 12h7V3H3zM14 21h7v-9h-7zM14 3h7v5h-7zM3 16h7v5H3z"></path></svg>
 <span>Agent Dashboard</span><span class="graceSideNavBadge">1</span>
 </a>
-<a class="graceSideNavLink" data-nav-target="queue" href="#queue">
+<a class="graceSideNavLink" data-nav-target="buyers-sellers-start" href="#buyers-sellers-start">
 <svg aria-hidden="true" class="graceSideNavIcon" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"></circle><circle cx="16" cy="8" r="3"></circle><path d="M3 20c0-4 2-7 5-7s5 3 5 7M11 20c0-4 2-7 5-7s5 3 5 7"></path></svg>
 <span>Buyers / Sellers</span><span class="graceSideNavBadge">2</span>
 </a>
@@ -926,7 +926,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:36px}
 <div class="wrap">
 <div class="viewerToolbar"><button aria-label="Reset automation decisions" class="resetAutomationBtn" id="resetAutomationBtn" type="button">↻ Reset automation</button></div>
 <div class="ovShell">
-<div class="ovHeader">
+<div class="ovHeader" id="agent-dashboard-start">
 <div>
 <span class="sectionLabel">Agent Dashboard</span>
 <h2>Good morning, Shelly.<br/>Here are the decisions that need your attention today.</h2>
@@ -1048,7 +1048,7 @@ footer{border-top:1px solid var(--line);background:#fff;margin-top:36px}
 </div>
 </section>
 </div>
-<div class="workspace contactWorkspace" id="queue">
+<div class="workspace contactWorkspace" id="buyers-sellers-start">
 <section aria-label="Buyer contacts requiring attention" class="contactColumn buyersColumn">
 <div class="panelTop"><div><span class="panelLabel">BUYER CONTACTS</span><h2>Buyers requiring attention</h2></div><strong>4 mock contacts</strong></div>
 <div class="contactList">
