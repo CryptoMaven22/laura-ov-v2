@@ -1,0 +1,38 @@
+{
+  "agent-dashboard.html": {
+    "size": 7242390,
+    "has_page_marker": true,
+    "active_href_count": 3,
+    "all_targets_present": true,
+    "overview_id_count": 1,
+    "operator_id_count": 1,
+    "viewer_id_count": 1
+  },
+  "buyers-sellers.html": {
+    "size": 7242726,
+    "has_page_marker": true,
+    "active_href_count": 2,
+    "all_targets_present": true,
+    "overview_id_count": 1,
+    "operator_id_count": 1,
+    "viewer_id_count": 1
+  },
+  "product-overview.html": {
+    "size": 7242475,
+    "has_page_marker": true,
+    "active_href_count": 2,
+    "all_targets_present": true,
+    "overview_id_count": 1,
+    "operator_id_count": 1,
+    "viewer_id_count": 1
+  },
+  "operating-environment.html": {
+    "size": 7242517,
+    "has_page_marker": true,
+    "active_href_count": 2,
+    "all_targets_present": true,
+    "overview_id_count": 1,
+    "operator_id_count": 1,
+    "viewer_id_count": 1
+  }
+}
